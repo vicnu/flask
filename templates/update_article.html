@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update article</title>
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data" action="/update/article/{{ article['id'] }}">
+    <input name="article_author" value="{{ article['author'] }}" placeholder="Article author" type="text">
+    <input name="article_title" value="{{ article['title'] }}" placeholder="Article Title" type="text">
+    <input name="article_text" value="{{ article['text'] }}" placeholder="Article Text" type="text">
+    <input type="file" name="article_image">
+
+    <button>Обновить статью</button>
+</form>
+
+</body>
+</html>

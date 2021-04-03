@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create user</title>
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data" action="/create/user">
+
+    <input name="user_name" placeholder="User name" type="text">
+    <br>
+    <input name="user_email" placeholder="User email" type="email"><br>
+    <input name="user_tel" placeholder="User tel" type="tel"><br>
+    <input name="user_pass" placeholder="password" type="password"><br>
+    <input name="user_pass_confirm" placeholder="confirm password" type="password"><br><br>
+    <label for="avatar">
+    <input type="file" name="user_avatar" id ="avatar"title="avatar"></label><br>
+
+    <button>Создать пользователя</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+<!--    <link rel="stylesheet" href="/static/assets/css/main.css?v=1" />-->
+</head>
+<body>
+
+<h1>Создать пользователя</h1>
+
+<form method="post"  enctype="multipart/form-data" action="/create/user">
+    <div class="input-container">
+            <input type="text" name="username" placeholder="Имя пользователя">
+    </div>
+    <div class="input-container">
+    <input type="email" name="email" placeholder="Почта пользователя">
+    </div>
+    <div class="input-container">
+    <input type="tel" name="phone" placeholder="Телефон пользователя">
+    </div>
+    <div class="input-container">
+
+    <input type="password" name="password" placeholder="Пароль">
+    </div>
+    <div class="input-container">
+
+    <input type="password" name="confirm_password" placeholder="Повторите пароль">
+    </div>
+
+    <div class="input-container">
+        <label for="avatar">Аватарка</label>
+        <input type="file" id="avatar" name="avatar">
+    </div>
+
+    <button type="submit">Создать</button>
+</form>
+
+</body>
+</html>
